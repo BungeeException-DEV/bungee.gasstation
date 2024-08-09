@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fuel Station</title>
+</head>
+<body>
+    <div id="fuelHUD" style="display: none;">
+        <h1>Tankstelle</h1>
+        <div>
+            <label for="fuelPrice">Preis pro Liter:</label>
+            <span id="fuelPrice">$0.00</span>
+        </div>
+        <div>
+            <label for="fuelAmount">Menge in Litern:</label>
+            <input type="number" id="fuelAmount" placeholder="z.B. 20">
+            <button id="maxFuel">Volltanken</button>
+        </div>
+        <div>
+            <label>Zahlungsmethode:</label>
+            <button id="payCash">Bar</button>
+            <button id="payCard">Karte</button>
+        </div>
+        <div>
+            <button id="confirmFuel">Bestätigen</button>
+            <button id="cancelFuel">Abbrechen</button>
+        </div>
+        <div id="progressContainer" style="display: none;">
+            <label>Tankvorgang:</label>
+            <div id="progressBar">
+                <div id="progress" style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
